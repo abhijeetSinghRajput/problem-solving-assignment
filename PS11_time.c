@@ -6,7 +6,7 @@ struct Time{
 };
 
 void input(struct Time *time){
-    printf("enter hh:mm:ss ");
+    printf("enter time (hh mm ss) ");
     scanf("%d %d %d", &time->hour, &time->minut, &time->second);
 }
 
