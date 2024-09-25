@@ -12,7 +12,7 @@ int HCF(int num1, int num2){
 
 int LCM(int num1, int num2){
     
-    return (num1 & num2) / HCF(num1, num2);
+    return (num1 * num2) / HCF(num1, num2);
 }
 
 int main(){

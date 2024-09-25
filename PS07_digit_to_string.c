@@ -1,5 +1,5 @@
-#include<stdio.h>
-char *toString(int digit){
+#include <stdio.h>
+char* digitToString(int digit){
     switch (digit)
     {
         case 0: return "Zero";
@@ -12,23 +12,20 @@ char *toString(int digit){
         case 7: return "Seven";
         case 8: return "Eight";
         case 9: return "Nine";
-    
         default: return "";
     }
 }
 
-void printWord(int num){
-    if(num == 0) return;
-    printWord(num / 10);
-    printf("%s ", toString(num % 10));
+void print(int num){
+    if(!num) return;
+    print(num / 10);
+    printf("%s ", digitToString(num % 10));
 }
 
 int main(){
     int num;
     printf("enter a number: ");
     scanf("%d", &num);
-
-    printWord(num);
-
+    print(num);
     return 0;
 }

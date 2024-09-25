@@ -10,7 +10,7 @@ int main(){
     const long int SEM_FEE = 125000;
 
     int obtained = sub1Marks + sub2Marks + sub3Marks;
-    int percentage = obtained / TOTAL_MARKS * 100;
+    float percentage = (float)obtained / TOTAL_MARKS * 100;
     int scholarship = 0;
 
     if(percentage < 50) scholarship = 0;
@@ -19,13 +19,13 @@ int main(){
     else if(percentage < 85) scholarship = 30;
     else scholarship = 50;
 
-    long int discount = SEM_FEE * discount / 100;
+    long int discount = SEM_FEE * scholarship / 100;
     long int payableAmount = SEM_FEE - discount;
 
     printf("Obtained Marks: %d\n", obtained);
-    printf("Your Percentage %d%\n", percentage);
+    printf("Your Percentage %f%%\n", percentage);
     printf("Your Semester Fee is : %lld\n", SEM_FEE);
-    printf("Your Scholarship is : %ld%\n", scholarship);
+    printf("Your Scholarship is : %d%%\n", scholarship);
     printf("You Got Discount of : %lld%\n", discount);
     printf("Your Net Payable Ammount : %lld%\n", payableAmount);
 

@@ -8,10 +8,24 @@ int isValidTriangle(double side1, double side2, double side3)
     return 1;
 }
 
+char* typeOfTriangle(double side1, double side2, double side3){
+    if(side1 == side2 && side2 == side3) return "equilateral";
+    if(side1 == side2 || side2 == side3 || side1 == side3) return "isosceles";
+
+    return "scalene";
+}
+
 int main()
 {
     double side1, side2, side3;
     printf("Enter all three sides of a triangle: ");
-    printf(isValidTriangle(side1, side2, side3) ? "valid" : "invalid");
+    scanf("%lf %lf %lf", &side1, &side2, &side3);
+
+    if(isValidTriangle(side1, side2, side3)){
+        printf("%s", typeOfTriangle(side1, side2, side3));
+    }
+    else{
+        printf("Invalid triangle");
+    }
     return 0;
 }
