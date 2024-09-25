@@ -1,22 +1,18 @@
 #include <stdio.h>
-int LCM(int num1, int num2){
-    int min = (num1 < num2)? num1 : num2;
-    for(int i = 2; i<=min; ++i){
-        if(num1 % i == 0 && num2 % i == 0){
-            return i;
-        }
-    }
-    return 1;
+int HCF(int num1, int num2){
+    int rem;
+    do
+    {
+        rem = num1 % num2;
+        num1 = num2;
+        num2 = rem;
+    } while (num2 != 0);
+    return num1;
 }
 
-int HCF(int num1, int num2){
-    int max = (num1 > num2)? num1 : num2;
-    for(int i = max; i >= 2; --i){
-        if(num1 % i == 0 && num2 % i == 0){
-            return i;
-        }
-    }
-    return 1;
+int LCM(int num1, int num2){
+    
+    return (num1 & num2) / HCF(num1, num2);
 }
 
 int main(){
