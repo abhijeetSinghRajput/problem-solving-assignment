@@ -17,7 +17,6 @@ int main(){
         }
         printf("\n");
     }
-
     for(int i = 2; i<=n; ++i){
         for(int j = 1; j < i; ++j){
             printf("  ");
@@ -30,6 +29,7 @@ int main(){
         }
         printf("\n");
     }
+    
 
     // =============== pattern 2
     printf("\n\n");
@@ -45,7 +45,6 @@ int main(){
         }
         printf("\n");
     }
-
     for(int i = 2; i<=n; ++i){
         for(int j = 1; j< i; ++j){
             printf("  ");
