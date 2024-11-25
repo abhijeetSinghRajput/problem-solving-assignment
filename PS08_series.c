@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 
-
 // s += 1 + 2^2/2! + ... n^n/n! 
 // s += 1 + 2^1/2! + ... n^n-1/n! 
 // s += 1 - 2! + 3! - 4! ...

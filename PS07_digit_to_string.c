@@ -19,6 +19,7 @@ char* digitToString(int digit){
 void print(int num){
     if(!num) return;
     print(num / 10);
+    // backtracking to print in reverse order
     printf("%s ", digitToString(num % 10));
 }
 

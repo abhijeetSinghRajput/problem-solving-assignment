@@ -27,10 +27,6 @@ struct Time sum(struct Time *t1, struct Time *t2){
 
     return result;
 }
-// 12:45:30 
-// 03:20:45
-// --------
-// 16:06:15
 
 int main(){
     struct Time t1, t2, t3;
