@@ -49,5 +49,16 @@ int main(){
 
     printf("Result: \n");
     printMatrix(r1, c2, result);
+
+    int transpose[c2][r1];
+    for(int i = 0; i<c2; ++i){
+        for(int j = 0; j<r1; ++j){
+            transpose[i][j] = result[j][i];
+        }
+    }
+
+    printf("Transpose: \n");
+    printMatrix(r1, c2, transpose);
+
     return 0;
 }
