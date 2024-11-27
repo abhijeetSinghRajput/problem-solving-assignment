@@ -13,7 +13,7 @@ struct Pair{
 
 void insert(Pair freqArr[], int *n, int value){
     // increase the frequency of existing element
-    for(int i = 0; i<n; ++i){
+    for(int i = 0; i<*n; ++i){
         if(freqArr[i].first == value){
             freqArr[i].second++;
             return;
