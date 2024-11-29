@@ -18,7 +18,10 @@ void printMatrix(int row, int col, int matrix[][col]){
 }
 int main(){
     int r1, c1, r2, c2;
+    printf("enter row1 and col1: ");
     scanf("%d %d", &r1, &c1);
+
+    printf("enter row2 and col2: ");
     scanf("%d %d", &r2, &c2);
     if(c1 != r2){
         printf("invalid order");

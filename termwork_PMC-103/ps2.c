@@ -34,6 +34,7 @@ void printMatrix(int row, int col, int matrix[][col]){
 
 int main(){
     int row, col;
+    printf("Enter row and column: ");
     scanf("%d %d", &row, &col);
     int matrix[row][col];
     inputMatrix(row, col, matrix);

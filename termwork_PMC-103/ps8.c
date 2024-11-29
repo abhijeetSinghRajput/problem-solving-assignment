@@ -15,6 +15,7 @@ void printRecord(Employee record[], int n){
 
 void inputRecord(Employee record[], int n){
     for(int i = 0; i<n; ++i){
+        printf("enter the id, name, department, salary: ");
         scanf("%d %s %s %ld", 
         &record[i].id, &record[i].name, &record[i].department, &record[i].salary);
     }
@@ -22,6 +23,7 @@ void inputRecord(Employee record[], int n){
 
 int main(){
     int n;
+    printf("enter the size of record: ");
     scanf("%d", &n);
     Employee record[n];
     inputRecord(record, n);
