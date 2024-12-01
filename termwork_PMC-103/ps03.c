@@ -2,6 +2,7 @@
 
 void inputMatrix(int row, int col, int matrix[][col]){
     for(int i = 0; i<row; ++i){
+        printf("input row %d:\t", i);
         for(int j = 0; j<col; ++j){
             scanf("%d", &matrix[i][j]);
         }

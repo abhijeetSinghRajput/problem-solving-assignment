@@ -7,7 +7,9 @@ int main(){
         lastIndex[i] = -1;
     }
 
-    char *str = "xyzwwepppw";
+    char str[100];
+    printf("Enter a string: ");
+    gets(str);
     int maxLen = 0;
     int i = 0;
     for(int j = 0; j<strlen(str); ++j){
